@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <p className="logo">
+      {/* <p className="logo">
         <Link href="/">
           <img
             src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYA.png"
@@ -18,8 +18,10 @@ const Navbar = () => {
             alt=""
           ></img>
         </Link>
-      </p>
-
+      </p> */}
+      {/* <p>
+        
+      </p> */}
       <button
         type="button"
         className="cart-icon"

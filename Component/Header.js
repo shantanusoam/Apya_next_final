@@ -9,7 +9,7 @@ const Header = () => {
         <img
           src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYA.png"
           alt="Logo"
-          class="header__logo"
+          height={50}
         />
       </div>
 
