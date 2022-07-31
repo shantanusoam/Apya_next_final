@@ -11,13 +11,10 @@ import SectionFeatures from '../Component/SectionFeatures';
 import Header from '../Component/Header';
 import Sparkles from '../animation/Sparkel';
 const Home = ({ products, bannerData, catlogData }) => (
-  <div>
+  <div class="Product-section">
     <Header />
     <HeroBanner heroBanner={bannerData.length && bannerData} />
-    <div className="products-heading">
-      <h2>Best Seller Products</h2>
-      <p>speaker There are many variations passages</p>
-    </div>
+
     {/* <SectionFeatures></SectionFeatures> */}
     <div className="products-container section-features">
       {catlogData?.map((product) => (
