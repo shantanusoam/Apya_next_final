@@ -19,9 +19,15 @@ const Navbar = () => {
           ></img>
         </Link>
       </p> */}
-      {/* <p>
-        
-      </p> */}
+      <p>
+        <Link href="/">+91 9150888833</Link>
+      </p>
+      <p>
+        <Link href="/">SIZECHART</Link>
+      </p>
+      <p>
+        <Link href="/">PRIVACY POLICY</Link>
+      </p>
       <button
         type="button"
         className="cart-icon"
