@@ -28,6 +28,12 @@ const Navbar = () => {
       <p>
         <Link href="/">PRIVACY POLICY</Link>
       </p>
+      <p>
+        <Link href="/">PRIVACY POLICY</Link>
+      </p>
+      <p>
+        <Link href="/">PRIVACY POLICY</Link>
+      </p>
       <button
         type="button"
         className="cart-icon"

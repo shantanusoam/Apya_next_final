@@ -2,7 +2,10 @@
   &__checkbox {
     display: none;
   }
-
+  display: none;
+  @include respond(tab-port) {
+    display: block;
+  }
   &__button {
     background-color: $color-white;
     height: 7rem;

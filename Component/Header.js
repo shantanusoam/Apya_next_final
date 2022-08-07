@@ -25,7 +25,7 @@ const Header = () => {
           duration={1000}
           spy={true}
           exact={true}
-          class="btn btn--white btn--animated"
+          className="btn btn--white btn--animated"
         >
           Discover
         </Link>

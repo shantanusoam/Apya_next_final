@@ -8,9 +8,11 @@ import { Catlog } from '../Component/Catlog/catlog';
 import { urlFor } from '../lib/client';
 import { animateScroll as scroll, Link } from 'react-scroll';
 import SectionFeatures from '../Component/SectionFeatures';
+
 import Header from '../Component/Header';
 import Sparkles from '../animation/Sparkel';
-const Home = ({ products, bannerData, catlogData }) => (
+import Testimonials from '../Component/Testimonials/testimonials';
+const Home = ({ products, bannerData, catlogData, testimonialData }) => (
   <div class="Product-section">
     <Header />
     <HeroBanner heroBanner={bannerData.length && bannerData} />
@@ -47,7 +49,9 @@ const Home = ({ products, bannerData, catlogData }) => (
         </div>
       ))}
     </div>
-
+    <Testimonials
+      testimonialData={testimonialData.length && testimonialData}
+    ></Testimonials>
     <Catlog catlogData={catlogData.length && catlogData}></Catlog>
 
     <HomePage></HomePage>
@@ -62,6 +66,7 @@ const Home = ({ products, bannerData, catlogData }) => (
         <Product key={product._id} product={product} />
       ))}
     </div>
+
     <a
       href="https://api.whatsapp.com/send?phone=919150888833&text=Hello Questions for information about the query"
       class="float"
@@ -79,6 +84,8 @@ export const getServerSideProps = async () => {
 
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);
+  const testimonials = '*[_type == "testimonials"]';
+  const testimonialData = await client.fetch(testimonials);
   const catlogQuery = `*[_type == "catalog"]{
     image,
     imageUrl,
@@ -102,7 +109,7 @@ export const getServerSideProps = async () => {
   // console.log(`dataaaaaaaaaaaaaaaaaa ${catlogData}`);
 
   return {
-    props: { products, bannerData, catlogData },
+    props: { products, bannerData, catlogData, testimonialData },
   };
 };
 
