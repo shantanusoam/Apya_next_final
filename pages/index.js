@@ -8,10 +8,10 @@ import { Catlog } from '../Component/Catlog/catlog';
 import { urlFor } from '../lib/client';
 import { animateScroll as scroll, Link } from 'react-scroll';
 import SectionFeatures from '../Component/SectionFeatures';
-
+import Testimonials from '../Component/Testimonials/Testimonials';
 import Header from '../Component/Header';
 import Sparkles from '../animation/Sparkel';
-import Testimonials from '../Component/Testimonials/testimonials';
+
 const Home = ({ products, bannerData, catlogData, testimonialData }) => (
   <div class="Product-section">
     <Header />
