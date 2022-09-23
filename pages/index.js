@@ -51,11 +51,11 @@ const Home = ({ products, bannerData, catlogData, testimonialData }) => (
         </div>
       ))}
     </div>
+
+    <Catlog catlogData={catlogData.length && catlogData}></Catlog>
     <Testimonials
       testimonialData={testimonialData.length && testimonialData}
     ></Testimonials>
-    <Catlog catlogData={catlogData.length && catlogData}></Catlog>
-
     <HomePage></HomePage>
     <div className="products-heading">
       <Sparkles>
