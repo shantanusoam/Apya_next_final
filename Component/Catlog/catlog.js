@@ -103,6 +103,7 @@ export const Catlog = ({ catlogData }) => {
               mousewheelControl={true}
               followFinger={true}
               spaceBetween={20}
+              speed={1000}
               loop={true}
               pagination={{
                 clickable: true,
@@ -114,7 +115,7 @@ export const Catlog = ({ catlogData }) => {
               modules={[Autoplay]}
               className="mySwiper"
             >
-              {data.product
+              {data.products
                 ? data.products.map((element) => (
                     <SwiperSlide>
                       <div className="SliderBox">

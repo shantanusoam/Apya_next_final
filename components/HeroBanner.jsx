@@ -14,12 +14,13 @@ const heroBanner = ({ heroBanner }) => {
       slidesPerView={1}
       spaceBetween={10}
       loop={true}
+      speed={900}
       pagination={{
         clickable: true,
       }}
       // centeredSlides={true}
       autoplay={{
-        delay: 2500,
+        delay: 1500,
         disableOnInteraction: false,
       }}
       modules={[Autoplay]}

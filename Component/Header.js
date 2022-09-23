@@ -5,13 +5,13 @@ import { urlFor } from '../lib/client';
 const Header = () => {
   return (
     <header class="header">
-      <div class="header__logo-box">
+      {/* <div class="header__logo-box">
         <img
           src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYA.png"
           alt="Logo"
           height={50}
         />
-      </div>
+      </div> */}
 
       <div class="header__text-box">
         <h1 class="heading-primary">

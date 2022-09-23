@@ -11,9 +11,11 @@ import SectionFeatures from '../Component/SectionFeatures';
 import Testimonials from '../Component/Testimonials/Testimonials';
 import Header from '../Component/Header';
 import Sparkles from '../animation/Sparkel';
+import Navbar from '../Component/upperbar/Navbar';
 
 const Home = ({ products, bannerData, catlogData, testimonialData }) => (
   <div class="Product-section">
+    {/* <Navbar /> */}
     <Header />
     <HeroBanner heroBanner={bannerData.length && bannerData} />
 
@@ -30,10 +32,10 @@ const Home = ({ products, bannerData, catlogData, testimonialData }) => (
           >
             {product.imageUrl ? (
               <img
-                className="Category-Card__Image feature-box__icon "
+                className="Category-Card__Image bg-cover h-96
+                "
                 src={product.imageUrl}
                 width={250}
-                height={250}
               ></img>
             ) : (
               <img
@@ -69,10 +71,10 @@ const Home = ({ products, bannerData, catlogData, testimonialData }) => (
 
     <a
       href="https://api.whatsapp.com/send?phone=919150888833&text=Hello Questions for information about the query"
-      class="float"
+      class="float "
       target="_blank"
     >
-      <FaWhatsapp class="fa fa-whatsapp my-float"></FaWhatsapp>
+      <FaWhatsapp class="fa fa-whatsapp my-float "></FaWhatsapp>
     </a>
     {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
   </div>
