@@ -8,16 +8,17 @@ import { Catlog } from '../Component/Catlog/catlog';
 import { urlFor } from '../lib/client';
 import { animateScroll as scroll, Link } from 'react-scroll';
 import SectionFeatures from '../Component/SectionFeatures';
+import Testimonials from '../Component/Testimonials/Testimonials';
 import Header from '../Component/Header';
 import Sparkles from '../animation/Sparkel';
-const Home = ({ products, bannerData, catlogData }) => (
-  <div>
+import Navbar from '../Component/upperbar/Navbar';
+
+const Home = ({ products, bannerData, catlogData, testimonialData }) => (
+  <div class="Product-section">
+    {/* <Navbar /> */}
     <Header />
     <HeroBanner heroBanner={bannerData.length && bannerData} />
-    <div className="products-heading">
-      <h2>Best Seller Products</h2>
-      <p>speaker There are many variations passages</p>
-    </div>
+
     {/* <SectionFeatures></SectionFeatures> */}
     <div className="products-container section-features">
       {catlogData?.map((product) => (
@@ -31,10 +32,10 @@ const Home = ({ products, bannerData, catlogData }) => (
           >
             {product.imageUrl ? (
               <img
-                className="Category-Card__Image feature-box__icon "
+                className="Category-Card__Image bg-cover h-96
+                "
                 src={product.imageUrl}
                 width={250}
-                height={250}
               ></img>
             ) : (
               <img
@@ -52,7 +53,9 @@ const Home = ({ products, bannerData, catlogData }) => (
     </div>
 
     <Catlog catlogData={catlogData.length && catlogData}></Catlog>
-
+    <Testimonials
+      testimonialData={testimonialData.length && testimonialData}
+    ></Testimonials>
     <HomePage></HomePage>
     <div className="products-heading">
       <Sparkles>
@@ -65,12 +68,13 @@ const Home = ({ products, bannerData, catlogData }) => (
         <Product key={product._id} product={product} />
       ))}
     </div>
+
     <a
       href="https://api.whatsapp.com/send?phone=919150888833&text=Hello Questions for information about the query"
-      class="float"
+      class="float "
       target="_blank"
     >
-      <FaWhatsapp class="fa fa-whatsapp my-float"></FaWhatsapp>
+      <FaWhatsapp class="fa fa-whatsapp my-float "></FaWhatsapp>
     </a>
     {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
   </div>
@@ -82,6 +86,8 @@ export const getServerSideProps = async () => {
 
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);
+  const testimonials = '*[_type == "testimonials"]';
+  const testimonialData = await client.fetch(testimonials);
   const catlogQuery = `*[_type == "catalog"]{
     image,
     imageUrl,
@@ -105,7 +111,7 @@ export const getServerSideProps = async () => {
   // console.log(`dataaaaaaaaaaaaaaaaaa ${catlogData}`);
 
   return {
-    props: { products, bannerData, catlogData },
+    props: { products, bannerData, catlogData, testimonialData },
   };
 };
 

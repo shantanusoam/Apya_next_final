@@ -22,19 +22,20 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.2s;
+  height: 30rem;
   animation: forwards 0.2s ease-out;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   &:hover {
     box-shadow: 0 10px 20px 10px rgba(black, 0.2);
   }
   &__Image {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: var(--border-radius);
   }
   &__heading {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;

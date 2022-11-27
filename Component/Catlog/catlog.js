@@ -103,6 +103,7 @@ export const Catlog = ({ catlogData }) => {
               mousewheelControl={true}
               followFinger={true}
               spaceBetween={20}
+              speed={1000}
               loop={true}
               pagination={{
                 clickable: true,

@@ -14,12 +14,13 @@ const heroBanner = ({ heroBanner }) => {
       slidesPerView={1}
       spaceBetween={10}
       loop={true}
+      speed={900}
       pagination={{
         clickable: true,
       }}
       // centeredSlides={true}
       autoplay={{
-        delay: 2500,
+        delay: 1500,
         disableOnInteraction: false,
       }}
       modules={[Autoplay]}
@@ -30,19 +31,17 @@ const heroBanner = ({ heroBanner }) => {
           <div className="hero-banner-container">
             <div>
               <div className="Header__Slider-dataImage">
-                <div>
+                <div className="banner-Text">
                   <p className="beats-solo">{element.smallText}</p>
                   <h3>{element.midText}</h3>
                   <h1>{element.largeText1}</h1>
                 </div>
-
-                <img
-                  src={urlFor(element.image)}
-                  alt="headphones"
-                  className="hero-banner-image"
-                />
               </div>
-
+              <img
+                src={urlFor(element.image)}
+                alt="headphones"
+                className="hero-banner-image"
+              />
               <div>
                 <Link href={`/product/${element.product}`}>
                   <button type="button">{element.buttonText}</button>

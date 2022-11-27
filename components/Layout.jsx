@@ -1,18 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
 
-import Navbar from './Navbar';
+import Navbar from '../Component/upperbar/Navbar';
+import Topbar from '../Component/upperbar/Topbar';
+
 import Footer from './Footer';
 import FooterAp from '../Component/Footer';
 
 const Layout = ({ children }) => {
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="layout">
       <Head>
         <title>Apya Industries</title>
       </Head>
       <header>
-        <Navbar />
+        {/* <Topbar /> */}
+        {/* <Navbar toggle={toggle} /> */}
       </header>
       <main className="main-container">{children}</main>
       <footer>
