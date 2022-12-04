@@ -12,7 +12,7 @@ const heroBanner = ({ heroBanner }) => {
   return (
     <Swiper
       slidesPerView={1}
-      spaceBetween={10}
+      spaceBetween={2}
       loop={true}
       speed={900}
       pagination={{
@@ -29,23 +29,26 @@ const heroBanner = ({ heroBanner }) => {
       {heroBanner.map((element) => (
         <SwiperSlide key={element._id}>
           <div className="hero-banner-container">
-            <div>
+            <div classsName="hero-banner-layout">
               <div className="Header__Slider-dataImage">
                 <div className="banner-Text">
                   <p className="beats-solo">{element.smallText}</p>
                   <h3>{element.midText}</h3>
                   <h1>{element.largeText1}</h1>
+                  <Link href={`/product/${element.product}`}>
+                    <button type="button">{element.buttonText}</button>
+                  </Link>
                 </div>
-              </div>
-              <img
-                src={urlFor(element.image)}
-                alt="headphones"
-                className="hero-banner-image"
-              />
-              <div>
-                <Link href={`/product/${element.product}`}>
-                  <button type="button">{element.buttonText}</button>
-                </Link>
+
+                <div></div>
+                <div className="Image_Container">
+                  <img
+                    src={urlFor(element.image)}
+                    alt="Sports-Tshirts"
+                    className="hero-banner-image"
+                  />
+                </div>
+
                 <div className="desc">
                   <h5>Description</h5>
                   <p>{element.desc}</p>

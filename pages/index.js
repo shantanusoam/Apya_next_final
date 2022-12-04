@@ -15,7 +15,6 @@ import Navbar from '../Component/upperbar/Navbar';
 
 const Home = ({ products, bannerData, catlogData, testimonialData }) => (
   <div class="Product-section">
-    {/* <Navbar /> */}
     <Header />
     <HeroBanner heroBanner={bannerData.length && bannerData} />
 
@@ -71,10 +70,10 @@ const Home = ({ products, bannerData, catlogData, testimonialData }) => (
 
     <a
       href="https://api.whatsapp.com/send?phone=919150888833&text=Hello Questions for information about the query"
-      class="float "
+      class="float"
       target="_blank"
     >
-      <FaWhatsapp class="fa fa-whatsapp my-float "></FaWhatsapp>
+      <FaWhatsapp class="fa fa-whatsapp my-float"></FaWhatsapp>
     </a>
     {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
   </div>
