@@ -1,6 +1,6 @@
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
-
+import apya from '../../Images//APYAINDUSTRY.png';
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
   const publishableKey =
@@ -17,8 +17,8 @@ const StripeCheckoutButton = ({ price }) => {
       name="APYA"
       billingAddress
       shippingAddress
-      image="../../Images//APYAINDUSTRY.png"
-      description={`Your total is ₹${price}`}
+      image={apya}
+      description={`Your total is ₹ ${price}`}
       amount={priceForStripe}
       panelLabel="Pay Now"
       token={onToken}

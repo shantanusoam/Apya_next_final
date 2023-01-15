@@ -1,17 +1,14 @@
 import React from 'react';
-
+import apya from '../Images/APYAINDUSTRY.png';
 import { animateScroll as scroll, Link } from 'react-scroll';
 import { urlFor } from '../lib/client';
+import Image from 'next/image';
 const Header = () => {
   return (
     <header class="header">
-      {/* <div class="header__logo-box">
-        <img
-          src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY.png"
-          alt="Logo"
-          height={50}
-        />
-      </div> */}
+      <div class="header__logo-box">
+        <Image src={apya} alt="Logo" height={50} width={50} />
+      </div>
 
       <div class="header__text-box">
         <h1 class="heading-primary">

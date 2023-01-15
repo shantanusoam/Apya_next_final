@@ -2,13 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import { animateScroll as scroll, Link as SLink } from 'react-scroll';
 import { urlFor } from '../lib/client';
+import apya from '../Images/APYAINDUSTRY.png';
 import { AddressMap } from '../components/AddressMap';
+import Image from 'next/image';
 const FooterAp = () => {
   return (
     <footer class="footer">
       <div class="footer__logo-box">
-        <img
-          src="../Images/APYAINDUSTRY.png"
+        <Image
+          src={apya}
+          width={80}
+          height={80}
           alt="Full logo"
           class="footer__logo"
         />

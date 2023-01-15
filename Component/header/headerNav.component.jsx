@@ -1,5 +1,6 @@
+import Image from 'next/image';
 import React from 'react';
-
+import apya from '../../Images/APYAINDUSTRY.png';
 const HeaderNav = ({ ishome }) => (
   /* <div className="header">
 <a href="/" className="logo-container">
@@ -31,11 +32,7 @@ const HeaderNav = ({ ishome }) => (
 
       <li class="logo">
         {/* <Logo></Logo> */}
-        <img
-          src="../../Images/APYAINDUSTRY.png"
-          alt="Logo"
-          class="header__logo"
-        />
+        <Image src={apya} alt="Logo" class="header__logo" />
       </li>
       {/* <li class="Push"><a href="/shop">sell</a></li> */}
       {/* <li class="Push">

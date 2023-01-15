@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import apya from '../Images/APYAINDUSTRY.png';
 const Navbar = () => (
   <nav class="navbarcontainer">
     <ul class="navbarcontainer_nav">
@@ -14,7 +16,7 @@ const Navbar = () => (
         <a href="/">Safety</a>
       </li>
       <li class="logo">
-        <img src="../Images/APYAINDUSTRY.png" alt="Logo" class="header__logo" />
+        <Image src={apya} alt="Logo" class="header__logo" />
       </li>
       <li class="Push">
         <a href="/#">sell</a>

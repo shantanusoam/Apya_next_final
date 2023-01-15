@@ -2,6 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 
 import { urlFor } from '../lib/client';
+import ph1 from '../Images/uwp478478.jpeg';
+import ph2 from '../Images/uwp478482.jpeg';
+
+import ph3 from '../Images/uwp478489.jpeg';
+
+import Image from 'next/image';
 const sectionAbout = () => {
   return (
     <section class="section-about">
@@ -35,18 +41,18 @@ const sectionAbout = () => {
         </div>
         <div class="col-1-of-2">
           <div class="composition">
-            <img
-              src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/uwp478489.jpeg"
+            <Image
+              src={ph3}
               alt="Photo 1"
               class="composition__photo composition__photo--p1"
             />
-            <img
-              src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/uwp478482.jpeg"
+            <Image
+              src={ph2}
               alt="Photo 2"
               class="composition__photo composition__photo--p2"
             />
-            <img
-              src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/uwp478478.jpeg"
+            <Image
+              src={ph1}
               alt="Photo 3"
               class="composition__photo composition__photo--p3"
             />
