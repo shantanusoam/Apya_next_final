@@ -14,11 +14,7 @@ const Navbar = () => (
         <a href="/">Safety</a>
       </li>
       <li class="logo">
-        <img
-          src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY.png"
-          alt="Logo"
-          class="header__logo"
-        />
+        <img src="../Images/APYAINDUSTRY.png" alt="Logo" class="header__logo" />
       </li>
       <li class="Push">
         <a href="/#">sell</a>
