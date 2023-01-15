@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { animateScroll as scroll, Link as SLink } from 'react-scroll';
 import { urlFor } from '../lib/client';
+import { AddressMap } from '../components/AddressMap';
 const FooterAp = () => {
   return (
     <footer class="footer">
@@ -49,6 +50,7 @@ const FooterAp = () => {
                 </li>
               </li>
             </ul>
+            <AddressMap></AddressMap>
             <ul className="footer__navigation">
               <br></br>
               <li class="footer__item">
