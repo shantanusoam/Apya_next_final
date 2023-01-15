@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaSearch } from 'react-icons/fa';
 
-import Navlogo from '../../Images/APYA.png';
+import Navlogo from '../../Images/APYAINDUSTRY';
 import LiveChat from '../../Images/live_chat-icon.png';
 
 const Topbar = () => (

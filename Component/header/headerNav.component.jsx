@@ -32,7 +32,7 @@ const HeaderNav = ({ ishome }) => (
       <li class="logo">
         {/* <Logo></Logo> */}
         <img
-          src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYA.png"
+          src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY"
           alt="Logo"
           class="header__logo"
         />
