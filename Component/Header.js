@@ -7,7 +7,7 @@ const Header = () => {
     <header class="header">
       {/* <div class="header__logo-box">
         <img
-          src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY"
+          src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY.png"
           alt="Logo"
           height={50}
         />

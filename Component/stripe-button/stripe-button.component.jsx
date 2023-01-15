@@ -17,7 +17,7 @@ const StripeCheckoutButton = ({ price }) => {
       name="APYA"
       billingAddress
       shippingAddress
-      image="https://shantanusoam.github.io/Apya/img/APYAINDUSTRY"
+      image="https://shantanusoam.github.io/Apya/img/APYAINDUSTRY.png"
       description={`Your total is ₹${price}`}
       amount={priceForStripe}
       panelLabel="Pay Now"

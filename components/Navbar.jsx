@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* <p className="logo">
         <Link href="/">
           <img
-            src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY"
+            src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY.png"
             height={10}
             alt=""
           ></img>

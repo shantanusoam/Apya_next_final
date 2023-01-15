@@ -15,7 +15,7 @@ const Navbar = () => (
       </li>
       <li class="logo">
         <img
-          src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY"
+          src="https://raw.githubusercontent.com/shantanusoam/new-ecommerce/main/apya/Images/APYAINDUSTRY.png"
           alt="Logo"
           class="header__logo"
         />
